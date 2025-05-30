@@ -1,0 +1,115 @@
+.schoolbell-regular {
+  font-family: "Schoolbell", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-family: "Schoolbell", cursive;
+    margin: 0;
+    background-image: url("simpsonsbackgr.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+    padding: 10px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    border: 1px double transparent;
+    padding: 10px 20px;
+    margin-right: 20px;
+    max-width: 120px;
+    height: auto;
+}
+.logo h1 {
+    margin-left: 20px;
+    color: #FCCB00;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px #000;
+}
+h1 {
+    margin: 0;
+}
+nav {
+    display: flex;
+    border-bottom: 3px solid transparent;
+    background-color: rgb(23, 105, 182, 0.9);
+    max-width: 380px;
+    border-radius: 15px;
+}
+nav a {
+    text-decoration: none;
+    color: #FCCB00;
+    font-size: 18px;
+    padding: 10px 30px;
+    text-shadow: 2px 2px 4px #000;
+}
+.banner {
+    height: 310px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: 50% 55.5%;
+    opacity: 0.9;
+}
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.intro {
+    flex: 3;
+    margin-right: 20px;
+    background-color: #1769B6;
+    color: #FCCB00;
+    padding: 20px;
+    border-radius: 15px;
+}
+.intro hr {
+    border: 1px solid #FCCB00;
+}
+.reviews {
+    margin-bottom: 20px;
+    color: #FCCB00;
+    font-size: 16px;
+}
+.writtenby {
+    font-style: italic;
+    text-align: right;
+    color: #FCCB00;
+    font-size: 18px;
+}
+aside {
+    flex: 1;
+    border: 3px solid transparent;
+    background-color: rgb(252, 203, 0, 0.9);
+    padding: 15px;
+    min-width: 200px;
+    height: fit-content;
+    border-radius: 15px;
+}
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+aside li {
+    margin-bottom: 10px;
+    color: #1769B6;
+}

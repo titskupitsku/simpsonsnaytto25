@@ -1,0 +1,52 @@
+#000000
+#FFFFFF
+#FCCB00
+#E44423
+#5C9ED9
+#1769B6
+#CDDF8D
+
+
+Etusivu
+        Simpsons-banner 
+        Sarjan perustiedot (ks. viivakuvat. VINKKI: etsi esim. IMDBstä)
+        Vähintään 5 arvostelua:
+            Etsi arvosteluja netistä. (VINKKI: esim IMDB:n kautta löytyy helposti useita: external reviews)
+            Arvostelijan nimi ja media, jossa toimii
+            n. 5 ensimmäistä riviä arvostelusta
+            Arvosana, jos sellaista on
+            Linkki varsinaiseen arvosteluun
+
+Springfield-sivu
+        Yleiskuva Springfieldin kaupungista
+        Kuvat seuraavista lokaatioista:
+            Simpsonien koti
+            Moe's
+            Kwik'e'mart
+            Kuvaa klikkaamalla avautuu kunkin lokaation oma sivu, jossa on 5–10 kuvan galleria lokaatiosta.
+            Gallerian kuvaa klikkaamalla se avautuu omaan ikkunaan
+
+Hahmosivu
+        Kuvat seuraavista hahmoista:
+            Homer
+            Marge
+            Bart
+            Lisa
+            Maggie
+            Burns
+            Apu
+            Moe
+        Hahmokuvaa klikkaamalla avautuu kunkin hahmon oma sivu. Sivulla on kaksi välilehteä, info ja meemit.
+        Infosivun sisältö:
+                Hahmon koko nimi
+                Lyhyt kuvaus hahmosta (voit kopioida tekstin jostain jos haluat)
+                Ääninäyttelijän kuva, nimi ja linkki näyttelijän IMDB-sivulle
+                1-5 ääniklippiä (esim. Wavsourcesta)
+        Meemisivun sisältö:
+                5 - 10 meemiä, joissa hahmo esiintyy
+                Kun meemiä klikkaa, se tulee näkyviin isommassa koossa
+                
+Keskustelupalsta
+        Tästä linkistä löytyy lista valmiita viestejä JavaScript-muodossa. Kustakin viestistä printataan sivulle Lähettäjän nimi, lähetyspäivä, otsikko ja viestisisältö
+        Sivulla on Luo viesti- painike, joka avaa viestilomakkeen dialogiin. Lomakkeessa on kentät muille viestin tiedoille paitsi lähetyspäivälle. JavaScript-koodin pitää poimia tämänhetkinen päivä itse.
+        Lomakkeessa on myös Lähetä ja Peruuta -painikkeet. Peruuta sulkee dialogin lähettämättä viestiä. Lähetä-painike muodostaa lomakkeeseen syötetyistä tiedoista viestiobjektin ja lisää sen viestilistaan. Sen jälkeen viestit printataan sivulle uudestaan
