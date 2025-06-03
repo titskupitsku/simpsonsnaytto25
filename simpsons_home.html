@@ -5,35 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="simpsonsdonut_favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>Simpsons Home - Springfield</title>
+    <link rel="stylesheet" href="springfield.css">
+    <title>Simpsons Home Springfield</title>
     <script src="springfield.js" defer></script>
 </head>
 <body>
-    <header>
+    <div class="container">
         <div class="logo">
             <img src="kuvat/simpsonslogo.png" alt="The Simpsons Logo">
-            <h1>The Simpsons Page</h1>
         </div>
-    </header>
-    <nav>
-        <a href="etusivu.html">Home</a>
-        <a href="springfield.html">Springfield</a>
-        <a href="">Characters</a>
-        <a href="">Forum</a>
-    </nav>
-    <h2>Simpsons Home</h2>
-        <div class="flex-container">
-            <img src="kuvat/simp4.jpg" onclick="avaaKuva('kuvat/simp4.jpg')">
-            <img src="kuvat/simp2.jpg" onclick="avaaKuva('kuvat/simp2.jpg')">
-            <img src="kuvat/simp1.jpg" onclick="avaaKuva('kuvat/simp1.jpg')">
-            <img src="kuvat/simp3.png" onclick="avaaKuva('kuvat/simp3.png')">
-            <img src="kuvat/simp5.jpg" onclick="avaaKuva('kuvat/simp5.jpg')">
-            <img src="kuvat/simp7.png" onclick="avaaKuva('kuvat/simp7.png')">
+        <div class="header">
+            <h4>The Simpsons Page</h4>
         </div>
-        <div id="popup">
-            <img id="popupKuva" src="">
-            <div id="closeButton" onclick="suljeKuva()">Back</div>
+        <div class="nav">
+            <a href="etusivu.html">Home</a>
+            <a href="springfield.html">Springfield</a>
+            <a href="hahmosivu.html">Characters</a>
+            <a href="foorumi.html">Forum</a>
         </div>
+        <h2>Simpsons Home</h2>
+        <div class="content">
+            <div class="locationpics">
+                <img src="kuvat/simp4.jpg" onclick="avaaKuva('kuvat/simp4.jpg')">
+            </div>
+            <div class="locationpics">
+                <img src="kuvat/simp1.jpg" onclick="avaaKuva('kuvat/simp1.jpg')">
+            </div>
+            <div class="locationpics">
+                <img src="kuvat/simp3.png" onclick="avaaKuva('kuvat/simp3.png')">
+            </div>
+            <div class="locationpics">
+                <img src="kuvat/simp5.jpg" onclick="avaaKuva('kuvat/simp5.jpg')">
+            </div>
+            <div class="locationpics">
+                <img src="kuvat/simp7.png" onclick="avaaKuva('kuvat/simp7.png')">
+            </div>
+        </div>
+        <div id="popup" style="display:none;">
+            <div id="popupContent">
+                <a href="#" id="closeButton" onclick="suljeKuva()">&lt; Back</a>
+                <img id="popupKuva" src="">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
