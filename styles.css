@@ -7,7 +7,8 @@
 body {
     font-family: "Schoolbell", cursive;
     margin: 0;
-    background-image: url("simpsonsbackgr.png");
+    padding: 0;
+    background-image: url("kuvat/simpsonsbackgr.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -15,8 +16,8 @@ body {
 header {
     display: flex;
     align-items: center;
-    border-bottom: 3px solid transparent;
     padding: 10px;
+    margin-bottom: 10px;
 }
 .logo {
     display: flex;
@@ -38,19 +39,33 @@ header {
 h1 {
     margin: 0;
 }
+h2 {
+    color: #FCCB00;
+    font-size: 28px;
+    text-shadow: 2px 2px 4px #000;
+    margin: 15px;
+}
 nav {
     display: flex;
-    border-bottom: 3px solid transparent;
+    gap: 20px;
+    padding: 0;
     background-color: rgb(23, 105, 182, 0.9);
-    max-width: 380px;
-    border-radius: 15px;
 }
 nav a {
     text-decoration: none;
     color: #FCCB00;
-    font-size: 18px;
-    padding: 10px 30px;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 25px;
     text-shadow: 2px 2px 4px #000;
+    transition: transform 0.2s;
+}
+nav a:hover {
+    background-color: #FCCB00;
+    color: #1769B6;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px #5C9ED9;
+    transform: scale(1.05);
 }
 .banner {
     height: 310px;
@@ -59,6 +74,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 15px;
 }
 .banner img {
     width: 100%;
@@ -66,7 +82,6 @@ nav a {
     display: block;
     object-fit: cover;
     object-position: 50% 55.5%;
-    opacity: 0.9;
 }
 main {
     display: flex;
@@ -97,7 +112,6 @@ main {
 }
 aside {
     flex: 1;
-    border: 3px solid transparent;
     background-color: rgb(252, 203, 0, 0.9);
     padding: 15px;
     min-width: 200px;

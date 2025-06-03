@@ -1,0 +1,108 @@
+.schoolbell-regular {
+  font-family: "Schoolbell", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+    font-family: "Schoolbell", cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url("kuvat/simpsonsbackgr.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "logo header"
+        "nav nav"
+        "banner banner"
+        "content content";
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 120px auto auto auto;
+    align-content: start;
+}
+.container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.container > div.logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: transparent;
+}
+.container > div.logo img {
+    padding: 0;
+    margin: 0;
+    max-width: 120px;
+    height: auto;
+}
+.container > div.header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: transparent;
+    color: #FCCB00;
+    font-size: 34px;
+    text-shadow: 2px 2px 4px #000;
+}
+.container > div.nav {
+    grid-area: nav;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    background-color: rgb(23, 105, 182, 0.9);
+}
+.container > div.nav a {
+    text-decoration: none;
+    color: #FCCB00;
+    font-size: 20px;
+    margin-left: 25px;
+    padding: 10px;
+    text-shadow: 2px 2px 4px #000;
+    transition: transform 0.2s;
+}
+.container > div.nav a:hover {
+    background-color: #FCCB00;
+    color: #1769B6;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px #5C9ED9;
+    transform: scale(1.05);
+}
+.container > div.banner {
+    grid-area: banner;
+    height: 220px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #1769B6;
+}
+.container > div.banner img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.container > div.content {
+    grid-area: content;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border: 3px solid #FCCB00;
+}
+.container > div.content img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    border: 2px solid #FCCB00;
+}
+.container > div.footer {
+    grid-area: footer;
+}
