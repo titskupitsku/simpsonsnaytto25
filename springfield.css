@@ -32,7 +32,7 @@ h2 {
     align-content: start;
 }
 .container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: transparent;
 }
 .container > div.logo {
     grid-area: logo;
@@ -71,7 +71,7 @@ h2 {
     margin-left: 25px;
     padding: 10px;
     text-shadow: 2px 2px 4px #000;
-    transition: transform 0.2s;
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
 }
 .container > div.nav a:hover {
     background-color: #FCCB00;
@@ -99,7 +99,7 @@ h2 {
 .container > div.content {
     grid-area: content;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 0;
     padding: 0px;
     background: transparent;
@@ -112,7 +112,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin: 0;
+    padding: 0;
 }
 .location h4 {
     color: #FCCB00;
@@ -125,10 +126,11 @@ h2 {
     max-width: 200px; 
     height: 150px;
     border: 2px solid #FCCB00;
-    border-radius: 8px;
+    border-radius: 4px;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.2s;
+    margin: 0;
 }
 .locationpics {
     text-align: center;
@@ -142,8 +144,7 @@ h2 {
     max-width: 200px; 
     height: 150px;
     border: 3px solid #FCCB00;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    border-radius: 4px;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.2s;
@@ -189,26 +190,121 @@ h2 {
     cursor: pointer;
     text-shadow: 2px 2px 4px #000;
 }
-.charpics {
+.charcontent {
+    grid-area: content;
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 620px;
+    margin: 0 auto;
+    gap: 20px;
     padding: 10px;
+    background: transparent;
+    align-items: start;
+    margin-top: 10px;
+}
+.charpics {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 0;
 }
 .charpics img {
     width: 100%;
-    max-width: 200px; 
+    max-width: 150px; 
     height: 150px;
     border: 3px solid #FCCB00;
     border-radius: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.2s;
 }
 .charpics img:hover {
     transform: scale(1.05);
+}
+.charlayout {
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    align-items: start;
+}
+.charimage img {
+    width: 100%;
+    height: 350px;
+    border: 3px solid #FCCB00;
+    background: transparent;
+    object-fit: cover;
+    object-position: 63% 50%;
+    border-radius: 4px;
+    display: block;
+}
+.charinfo {
+    width: 100%;
+}
+.tabit {
+    display: flex;
+    margin-bottom: 0;
+}
+.tab {
+    font-family: "Schoolbell", cursive;
+    font-size: 18px;
+    background: #FCCB00;
+    color: #1769B6;
+    border: 2px solid #1769B6;
+    border-bottom: none;
+    padding: 8px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: transform 0.2s, background 0.2s, color 0.2s;
+    text-shadow: 2px 2px 4px #5C9ED9;
+}
+.tab.inactive:hover {
+    background: #1769B6;
+    color: #FCCB00;
+    transform: scale(1.05);
+}
+.tab.active {
+    background: #1769B6;
+    color: #FCCB00;
+    text-shadow: 2px 2px 4px #000;
+}
+.infoloota {
+    border: 2px solid #1769B6;
+    padding: 20px;
+    background: #1769B6;
+    color: #FCCB00;
+    text-shadow: 1px 1px 2px #000;
+}
+.audio {
+    margin: 18px 0;
+    display: flex;
+    gap: 15px;
+}
+.audio button {
+    font-family: "Schoolbell", cursive;
+    color: #1769B6;
+    border: 2px solid #1769B6;
+    border-radius: 8px;
+    background: #FCCB00;
+    padding: 10px 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px #5C9ED9;
+}
+.aaninayttelija {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    gap: 10px;
+}
+.aaninayttelija img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 2px solid #FCCB00;
 }
