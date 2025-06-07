@@ -9,6 +9,23 @@ springfield
 width="355px"; height="250px"
 hahmosivu välilehtirakenne // tab
 
+<div id="dialoginbg" style="display:none;">
+        <div id="dialog">
+            <form id="msgsform">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Your name" required>
+                <label for="msgtitle">Title</label>
+                <input id="msgtitle" type="text" placeholder="Message title" required>
+                <label for="msgtext">Message</label>
+                <textarea id="msgtext" placeholder="Write your message here..." required></textarea>
+                <div class="dialogbttns">
+                    <button type="submit" id="sendMSGbttn">Send</button>
+                    <button type="button" id="cancelMSGbttn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
 Etusivu
         Simpsons-banner 
         Sarjan perustiedot (ks. viivakuvat. VINKKI: etsi esim. IMDBstä)

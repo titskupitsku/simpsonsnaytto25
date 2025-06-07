@@ -30,26 +30,44 @@
             </div>
             <div class="charinfo">
                 <div class="tabit">
-                    <button class="tab active">Info</button>
-                    <button class="tab inactive">Memes</button>
+                    <button class="tab active" onclick="avaaTabi('info', event)">Info</button>
+                    <button class="tab" onclick="avaaTabi('meemit', event)">Memes</button>
                 </div>
                 <div class="infoloota">
-                    <h2>Homer Simpson</h2>
-                    <p>Homer Jay Simpson is the protagonist of the animated television series The Simpsons.<br>
-                    He is a crude, ignorant, and slobbish individual, although he is fundamentally a good person and shows great caring and loyalty to his family, friends and on occasion, to those he barely knows or those he considers his enemies.<br>
-                    Homer works as a low-level safety inspector at the Springfield Nuclear Power Plant in Sector 7G, although he is often incompetent and negligent towards his duties. <br>
-                    He spends a great deal of his time at Moe's Tavern with his friends Barney Gumble, Carl Carlson, Lenny Leonard, and Moe Szyslak.</p>
+                    <div id="info" class="tabcontent active" style="display: block;">
+                        <h2>Homer Simpson</h2>
+                        <p>Homer Jay Simpson is the protagonist of the animated television series The Simpsons.<br>
+                        He is a crude, ignorant, and slobbish individual, although he is fundamentally a good person and shows great caring and loyalty to his family, friends and on occasion, to those he barely knows or those he considers his enemies.<br>
+                        Homer works as a low-level safety inspector at the Springfield Nuclear Power Plant in Sector 7G, although he is often incompetent and negligent towards his duties. <br>
+                        He spends a great deal of his time at Moe's Tavern with his friends Barney Gumble, Carl Carlson, Lenny Leonard, and Moe Szyslak.</p>
                     <div class="audio">
-                        <button>1</button>
-                        <button>2</button>
+                        <button onclick="soitaAani()">1</button>
+                        <button onclick="soitaAani()">2</button>
                         <button>3</button>
+                        <audio id="1990" src="../audio/1990.wav"></audio>
+                        <audio id="alcohol" src="../audio/alcohol1_x.wav"></audio>
                     </div>
                     <div class="aaninayttelija">
                         <img src="../kuvat/homervoice.jpg" alt="Homer Voice Actor">
                         <p>Homer is voiced by Dan Castellaneta.</p>
                     </div>
                 </div>
+                <div id="meemit" class="tabcontent" style="display:none;">
+                    <h2>Homer Memes</h2>
+                    <div class="memes">
+                        <img src="../kuvat/homermeme1.jpg" alt="Homer Meme 1" onclick='avaaMeemi("../kuvat/homermeme1.jpg")'>
+                        <img src="../kuvat/homer2.jpg" alt="Homer Meme 2" onclick="avaaMeemi('../kuvat/homer2.jpg')">
+                        <img src="../kuvat/homer3.jpg" alt="Homer Meme 3" onclick="avaaMeemi('../kuvat/homer3.jpg')">
+                        <img src="../kuvat/homer4.jpg" alt="Homer Meme 4" onclick="avaaMeemi('../kuvat/homer4.jpg')">
+                        <img src="../kuvat/homer5.jpg" alt="Homer Meme 5" onclick="avaaMeemi('../kuvat/homer5.jpg')">
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+    <div id="meemiPopup" style="display:none;">
+            <button onclick="suljeMeemi()">&times;</button>
+            <img id="meemiKuva" src="">
         </div>
     </div>
 </body>

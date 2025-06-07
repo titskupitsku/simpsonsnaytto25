@@ -58,14 +58,12 @@ nav a {
     padding: 10px;
     margin-left: 25px;
     text-shadow: 2px 2px 4px #000;
-    transition: transform 0.2s;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
 }
 nav a:hover {
-    background-color: #FCCB00;
-    color: #1769B6;
-    border-radius: 5px;
-    text-shadow: 2px 2px 4px #5C9ED9;
-    transform: scale(1.05);
+    background-color: transparent;
+    color: #FCCB00;
+    transform: scale(1.3);
 }
 .banner {
     height: 310px;

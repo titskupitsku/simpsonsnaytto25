@@ -71,14 +71,13 @@ h2 {
     margin-left: 25px;
     padding: 10px;
     text-shadow: 2px 2px 4px #000;
-    transition: transform 0.2s, background-color 0.2s, color 0.2s;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
 }
 .container > div.nav a:hover {
-    background-color: #FCCB00;
-    color: #1769B6;
-    border-radius: 5px;
-    text-shadow: 2px 2px 4px #5C9ED9;
-    transform: scale(1.05);
+    background-color: transparent;
+    color: #FCCB00;
+    padding: 10px;
+    transform: scale(1.3);
 }
 .container > div.banner {
     grid-area: banner;
@@ -159,8 +158,8 @@ h2 {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,8 +171,8 @@ h2 {
     max-height: 90%;
 }
 #popupKuva {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 90vw;
+    max-height: 80vh;
     border: 5px solid #5C9ED9;
 }
 #closeButton {
@@ -307,4 +306,163 @@ h2 {
     height: 50px;
     object-fit: cover;
     border: 2px solid #FCCB00;
+}
+.memes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.memes img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #FCCB00;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+.memes img:hover {
+    transform: scale(1.08);
+    border-color: #1769B6;
+}
+#meemiPopup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#meemiPopup.active {
+    display: flex;
+}
+
+#meemiPopup .popup-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#meemiKuva {
+    max-width: 90vw;
+    max-height: 80vh;
+    border: 5px solid #FCCB00;
+    border-radius: 8px;
+    background: #fff;
+}
+
+#meemiPopup button {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 32px;
+    background: #FCCB00;
+    color: #1769B6;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 2px 2px 8px #000;
+}
+
+.forumcontainer {
+    margin: 20px auto;
+    background-color: #1769B6;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#newMSGbttn {
+    background-color: #FCCB00;
+    color: #1769B6;
+    border: 3px solid #1769B6;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Schoolbell", cursive;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
+}
+#newMSGbttn:hover {
+    background-color: #1769B6;
+    color: #FCCB00;
+    border-color: #FCCB00;
+    transform: scale(1.05);
+}
+.message {
+    background: rgba(255,255,255,0.08);
+    border-radius: 3px;
+    padding: 12px 18px;
+    color: #CDDF8D;
+}
+.message-title {
+    font-weight: bold;
+    color: #FCCB00;
+}
+.message-divider {
+    border-top: 3px solid #FCCB00;
+    margin: 24px 0;
+}
+DIALOGILOOTA vw on prosenttiosuus selainikkunasta eikä vain laatikosta
+
+#dialoginbg {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw; height: 100vh;
+    z-index: 100;
+}
+#commentinbg {
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+#comment {
+    background: url("kuvat/bartchalkboard.jpg");
+    background-position: absolute;
+    background-repeat: no-repeat;
+    object-position: 50% 50%;
+    position: relative;
+    border: 4px solid #FCCB00;
+    border-radius: 3px;
+    padding: 24px;
+    width: 350px;
+    color: #FCCB00;
+    box-shadow: 0 4px 8px #000;
+}
+
+#comment label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+#comment input,
+#comment textarea {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 2px solid #1769B6;
+    border-radius: 4px;
+    font-family: "Schoolbell", cursive;
+    font-size: 16px;
+}
+.dialogbttns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }

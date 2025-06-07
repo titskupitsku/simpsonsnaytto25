@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="simpsonsdonut_favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    <title>The Simpsons Forum</title>
+    <link rel="stylesheet" href="springfield.css">
+    <script src="springfield.js" defer></script>
+</head>
+<body>
+        <div class="container">
+            <div class="logo">
+                <img src="kuvat/simpsonslogo.png" alt="The Simpsons Logo">
+            </div>
+            <div class="header">
+                <h4>The Simpsons Page</h4>
+            </div>
+            <div class="nav">
+                <a href="etusivu.html">Home</a>
+                <a href="springfield.html">Springfield</a>
+                <a href="hahmosivu.html">Characters</a>
+                <a href="foorumi.html">Forum</a>
+            </div>
+        </div>
+        <div class="forumcontainer">
+            <button id="newMSGbttn">New Message</button>
+            <div id="forummsgs"></div>
+        </div>
+    <div id="commentinbg" style="display:none;">
+        <div id="comment">
+            <form id="msgsform">
+                <label for="name">Name</label>
+                    <input type="name" id="name" placeholder="Your name" required>
+                <br><label for="msgtitle">Title</label>
+                    <input id="msgtitle" type="text" placeholder="Message title" required>
+                <br><label for="comment_text">Message</label>
+                    <textarea id="comment_text" placeholder="Write your message here..." required></textarea>
+                <div class="dialogbttns">
+                    <button type="submit" id="sendMSGbttn">Send</button>
+                    <button type="button" id="cancelMSGbttn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
